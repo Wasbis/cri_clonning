@@ -20,22 +20,22 @@ export const navLinks = [
   },
   {
     id: 2,
-    path: "kelas",
+    path: "kelaspage",
     text: "Kelas",
   },
   {
     id: 3,
-    path: "testimonial",
+    path: "testimonialpage",
     text: "Testimonial",
   },
   {
     id: 4,
-    path: "faq",
+    path: "faqpage",
     text: "FAQ",
   },
   {
     id: 5,
-    path: "syaratketen",
+    path: "syaratketentuan",
     text: "Syarat & Ketentuan",
   },
 ];

@@ -1,33 +1,30 @@
-import { Routes, Route} from 'react-router-dom';
+import { Routes, Route } from "react-router-dom";
 
-import Navbarcomponent from './components/NavbarComponent';
-import Footercompontent from './components/FooterComponent';
+import Navbarcomponent from "./components/NavbarComponent";
+import Footercompontent from "./components/FooterComponent";
 
-
-import FaqPage from './pages/FaqPage.';
-import HomePage from './pages/HomePage';
-import KelasPage from './pages/KelasPage';
-import SyaratKetentuan from './pages/SyaratKetentuanPage';
-import TestimonialPage from './pages/TestimonialPage';
-
+import FaqPage from "./pages/FaqPage.";
+import HomePage from "./pages/HomePage";
+import KelasPage from "./pages/KelasPage";
+import SyaratKetentuan from "./pages/SyaratKetentuanPage";
+import TestimonialPage from "./pages/TestimonialPage";
 
 function App() {
   return (
-    <div>  
+    <div>
       <Navbarcomponent />
 
       <Routes>
-        <Route path='/' Component={HomePage}/>
-        <Route path='/kelaspage' Component={KelasPage}/>
-        <Route path='/syaratketentuan' Component={SyaratKetentuan}/>
-        <Route path='/testimonial' Component={TestimonialPage}/>
-        <Route path='/faqpage' Component={FaqPage}/>
+        <Route path="/" Component={HomePage} />
+        <Route path="/kelaspage" Component={KelasPage} />
+        <Route path="/testimonialpage" Component={TestimonialPage} />
+        <Route path="/faqpage" Component={FaqPage} />
+        <Route path="/syaratketentuan" Component={SyaratKetentuan} />
       </Routes>
 
-      <Footercompontent /> 
-  </div>
+      <Footercompontent />
+    </div>
   );
-  
 }
 
-export default App
+export default App;
