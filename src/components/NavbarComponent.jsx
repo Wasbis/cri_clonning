@@ -13,13 +13,12 @@ const Navbarcomponent = () => {
             <Nav className="mx-auto">
               {navLinks.map((link) => {
                 return (
-                  <div class="nav-link" key={link.id}>
+                  <div className="nav-link" key={link.id}>
                     <NavLink
                       to={link.path}
-                      className={({ isActive, isPending }) => [
-                        isPending ? "pending" : "",
-                        isActive ? "active" : "",
-                      ]}
+                      className={({ isActive, isPending }) =>
+                        isPending ? "pending" : isActive ? "active" : ""
+                      }
                     >
                       {link.text}
                     </NavLink>
