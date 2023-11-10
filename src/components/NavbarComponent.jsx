@@ -1,11 +1,25 @@
-import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
+import { useState, useEffect } from "react";
+import { Navbar, Container, Nav } from "react-bootstrap";
 import { navLinks } from "../data/index";
 import { NavLink } from "react-router-dom";
 
-const Navbarcomponent = () => {
+const NavbarComponent = () => {
+  const [changeColor, setChangeColor] = useState(false);
+
+  const changeBackgroundColor = () => {
+    if (window.scrollY > 10) {
+      setChangeColor(true);
+    } else {
+      setChangeColor(false);
+    }
+  };
+  useEffect(() => {
+    changeBackgroundColor();
+    window.addEventListener("scroll", changeBackgroundColor);
+  });
   return (
     <div>
-      <Navbar expand="lg">
+      <Navbar expand="lg" className={changeColor ? "color-active" : ""}>
         <Container>
           <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -46,4 +60,4 @@ const Navbarcomponent = () => {
   );
 };
 
-export default Navbarcomponent;
+export default NavbarComponent;
