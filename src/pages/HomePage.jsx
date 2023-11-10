@@ -5,8 +5,8 @@ const HomePage = () => {
   return (
     <div className="homepage">
       <header className="w-100 min-vh-100 d-flex align-item-center">
-        <Container>
-          <Row className="header-box d-flex align-item-center">
+        <Container className="container-homepage">
+          <Row className="header-box d-flex justify-content-center align-item-center">
             <Col>
               <h1>
                 Temukan <br />
@@ -16,7 +16,9 @@ const HomePage = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptatibus ipsam laboriosam, atque eum expedita omnis.
               </p>
-              <button>Lihat Kelas</button>
+              <button className="btn btn-danger btn-lg rounded-1 me-2">
+                Lihat Kelas
+              </button>
               <button>Lihat Promo</button>
             </Col>
             <Col>

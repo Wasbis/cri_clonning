@@ -14,12 +14,12 @@
   position: fixed;
   padding: 15px 0 15px 0;
   width: 100%;
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  z-index: 9999;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  z-index: 999;
 }
 
 .navbar.color-active{
@@ -64,6 +64,10 @@ header {
 }
 
 /* style Homepage Header  */
+
+.container-homepage{
+  margin-top: 100px;
+}
 
 .homepage .header-box h1{
   font-size: 3.2rem;

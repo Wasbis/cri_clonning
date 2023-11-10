@@ -21,7 +21,9 @@ const NavbarComponent = () => {
     <div>
       <Navbar expand="lg" className={changeColor ? "color-active" : ""}>
         <Container>
-          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+          <Navbar.Brand href="#home" className="fs-3 fw-bold">
+            React-Bootstrap
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mx-auto">
