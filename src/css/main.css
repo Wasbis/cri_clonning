@@ -87,3 +87,14 @@ header {
 .homepage .header-box img {
   width: 100%;
 }
+
+@media screen and (max-width: 992px) {
+  
+  .homepage .header-box { 
+    width: 100%;
+  }
+  /* .homepage .header-box{
+    
+  } */
+
+}
